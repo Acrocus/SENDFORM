@@ -58,8 +58,8 @@ header {
     color: rgba(244, 149, 29);
 }
 main {
-    background-color: green;
-    height: 1800px;
+   
+    height: auto;
 }
 
 .centr_block{
