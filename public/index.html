@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="image/android-chrome-512x512.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/general.css">
+   <link rel="stylesheet" href="style/inform.css">
     <script src="js/script.js" defer></script>
     <script src="js/general.js" defer></script>
   <title>Форма зворотного зв'язку</title>
@@ -75,11 +76,12 @@
         </div>
         </div>
         <div class="dg_info">
-             <h2>Зв'яжіться з нами</h2>
+          <div class="inform_block">
+             <h2>Тут ти можеш подати якусь ідею для покрашення  сайту, або ж додати свої контакти.</h2>
   <form id="contactForm">
     <input type="text" name="name" placeholder="Ваше ім’я" required><br>
     <textarea name="message" placeholder="Ваше повідомлення" required></textarea><br>
-    <button type="submit">Надіслати</button>
+    <button class="sendbuttom" type="submit">Надіслати</button>
   </form>
   <p id="response"></p>
   <script>
@@ -99,6 +101,7 @@
       document.getElementById('response').innerText = result.success ? "✅ Надіслано!" : "❌ Помилка: " + result.error;
     });
   </script>
+  </div>
         </div>
 
       </section>
