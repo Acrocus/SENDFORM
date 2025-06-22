@@ -12,9 +12,9 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 app.post('/send', async (req, res) => {
-  const { name, phone, message } = req.body;
+  const { name,  message } = req.body;
 
-  const text = `📬 <b>Нове повідомлення з сайту</b>\n👤 <b>Ім’я:</b> ${name}\n📞 <b>Телефон:</b> ${phone}\n📝 <b>Повідомлення:</b> ${message}`;
+  const text = `📬 <b>Нове повідомлення з сайту</b>\n👤 <b>Ім’я:</b> ${name} \n📝 <b>Повідомлення:</b> ${message}`;
 
   try {
     const response = await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
